@@ -5,6 +5,56 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./app/shared/styles.css">
+    <style>
+        /* Mobile responsive adjustments */
+        @media (max-width: 768px) {
+            .navbar img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .navbar-nav {
+                text-align: center;
+            }
+
+            .navbar-toggler {
+                margin-left: auto;
+            }
+
+            .featurette-heading {
+                font-size: 22px;
+            }
+
+            .times-new-roman {
+                font-size: 14px;
+            }
+
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .footer p {
+                font-size: 12px;
+                text-align: center;
+                margin: 0;
+            }
+
+            .footer .social-links {
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .footer .social-links a {
+                margin: 0 10px;
+            }
+        }
+
+        /* Optional: Customize your slide-in menu on mobile */
+        #slideMenu.open {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -18,9 +68,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#!/home">Home</a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#!/blog">Blog</a>
-                </li> -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -29,7 +76,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#!/portfolio-seniors">Seniors</a>
                         <a class="dropdown-item" href="#!/portfolio-corporate">Corporate Branding</a>
-                        <a class="dropdown-item" href="#!/portfolio-familes">Familes</a>
+                        <a class="dropdown-item" href="#!/portfolio-familes">Families</a>
                         <a class="dropdown-item" href="#!/portfolio-wedding">Weddings</a>
                     </div>
                 </li>
@@ -51,7 +98,6 @@
         <span class="close-btn">&times;</span>
         <ul>
             <li><a href="#!/home">Home</a></li>
-            <!-- <li><a href="#!/blog">Blog</a></li> -->
             <li><a href="#!/portfolio-seniors">Seniors</a></li>
             <li><a href="#!/portfolio-corporate">Corporate Branding</a></li>
             <li><a href="#!/portfolio-familes">Families</a></li>
@@ -71,8 +117,8 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container d-flex align-items-center justify-content-between">
-            <p style="margin: 0;">&copy; All content Copyright © 2025 Kaylee Jean Photography</p>
-            <div>
+            <p>&copy; All content Copyright © 2025 Kaylee Jean Photography</p>
+            <div class="social-links">
                 <a href="https://www.instagram.com/kayleejeanphotos/#" target="_blank" style="color: white; margin-right: 10px;">
                     <i class="fab fa-instagram"></i>
                 </a>
