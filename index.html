@@ -6,73 +6,73 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./app/shared/styles.css?v=1.0.1"> <!-- Versioned styles -->
-    <style>
-        /* Mobile responsive adjustments */
-        @media (max-width: 768px) {
-            .navbar img {
-                width: 80px;
-                height: 80px;
-            }
-
-            .navbar-nav {
-                text-align: center;
-            }
-
-            .navbar-toggler {
-                margin-left: auto;
-            }
-
-            .featurette-heading {
-                font-size: 22px;
-            }
-
-            .times-new-roman {
-                font-size: 14px;
-            }
-
-            .container {
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-
-            .footer p {
-                font-size: 12px;
-                text-align: center;
-                margin: 0;
-            }
-
-            .footer .social-links {
-                text-align: center;
-                margin-top: 10px;
-            }
-
-            .footer .social-links a {
-                margin: 0 10px;
-            }
+<style>
+    /* Mobile responsive adjustments */
+    @media (max-width: 768px) {
+        .navbar img {
+            width: 100px; /* Slightly smaller logo size */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 15px; /* Add space between logo and navbar items */
         }
 
-        /* Optional: Customize your slide-in menu on mobile */
-        #slideMenu.open {
-            display: block;
+        .navbar-nav {
+            text-align: center;
         }
 
-            /* Mobile responsive adjustments */
-            @media (max-width: 768px) {
-                #slideMenu ul {
-                    font-size: 20px; /* Adjust the font size for mobile */
-                }
+        .navbar-toggler {
+            margin-left: auto;
+        }
 
-                #slideMenu a {
-                    font-size: 18px; /* Adjust the font size for the links */
-                }
-            }
+        .featurette-heading {
+            font-size: 22px;
+        }
 
-    </style>
+        .times-new-roman {
+            font-size: 14px;
+        }
+
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .footer p {
+            font-size: 12px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .footer .social-links {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .footer .social-links a {
+            margin: 0 10px;
+        }
+    }
+
+    /* Optional: Customize your slide-in menu on mobile */
+    #slideMenu.open {
+        display: block;
+    }
+
+    /* Mobile responsive adjustments */
+    @media (max-width: 768px) {
+        #slideMenu ul {
+            font-size: 20px; /* Adjust the font size for mobile */
+        }
+
+        #slideMenu a {
+            font-size: 18px; /* Adjust the font size for the links */
+        }
+    }
+</style>
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white; margin-bottom: 50px;">
-        <img src="./app/views/imageFolder/logo.png" style="width: 120px; height: 120px;" alt="Logo">
+        <img src="./app/views/imageFolder/logo.png" style="width: 100px; height: 70px;" alt="Logo">
         <button id="slideMenuToggle" class="navbar-toggler">
             <span class="navbar-toggler-icon"></span>
         </button>
