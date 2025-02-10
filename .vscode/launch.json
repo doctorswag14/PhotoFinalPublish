@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Start KayleePhotoFrontend",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npx",
+            "runtimeArgs": [
+                "http-server",
+                "-p", "8081"
+            ],
+            "cwd": "${workspaceFolder}/",
+            "stopOnEntry": false,
+            "console": "integratedTerminal",
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "outputCapture": "std",
+            "internalConsoleOptions": "neverOpen"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Run Both APIs",
+            "configurations": [
+                "Start KayleePhotoFrontend"
+            ]
+        }
+    ]
+}

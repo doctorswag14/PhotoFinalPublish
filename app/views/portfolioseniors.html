@@ -1,158 +1,49 @@
 <style>
-       .custom-img {
-            width: 100%; /* Make the image fit its container's width */
-            height: 300px; /* Set a fixed height for all images */
-            object-fit: contain; /* Ensures the entire image is visible without cropping */
-            background-color: white; /* Background color for any empty space */
+    .custom-img {
+        width: 100%; /* Responsive width */
+        height: 250px; /* Adjusted for mobile */
+        object-fit: cover; /* Ensures uniform image display */
+        background-color: white;
+        border-radius: 8px; /* Slight rounding for a polished look */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .custom-img:hover {
+        transform: scale(1.05); /* Slight zoom effect on hover */
+    }
+
+    .img-container {
+        padding: 8px; /* More padding for better spacing */
+    }
+
+    @media (max-width: 576px) {
+        .custom-img {
+            height: 200px; /* Smaller height for mobile */
         }
-        .img-container {
-            padding: 5px; /* Adds spacing between images */
-        }
+    }
+
+    .page-title {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 </style>
 
 <div>
-    <div style="margin-top: 50px;">
-        <div style="text-align: center;">
-            <h3 class="andrea-text" style="font-size: 44px;">Seniors</h3>
-        </div>
+    <div class="text-center mt-5">
+        <h3 class="andrea-text" style="font-size: 44px;">Seniors</h3>
     </div>
+
     <div class="container mt-4">
         <div class="row">
-            <!-- First Row -->
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior.jpg" alt="Image 1" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior2.jpg" alt="Image 2" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior2.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior3.jpg" alt="Image 3" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior3.jpg')">
-            </div>
-    
-            <!-- Second Row -->
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior4.jpg" alt="Image 4" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior4.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior5.jpg" alt="Image 5" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior5.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior6.jpg" alt="Image 6" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior6.jpg')">
-            </div>
-    
-            <!-- Third Row -->
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior7.jpg" alt="Image 7" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior7.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior8.jpg" alt="Image 8" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior8.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior9.jpg" alt="Image 9" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior9.jpg')">
-            </div>
-    
-            <!-- Fourth Row -->
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior10.jpg" alt="Image 10" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior10.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior11.jpg" alt="Image 11" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior11.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior12.jpg" alt="Image 12" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior12.jpg')">
-            </div>
-    
-            <!-- Fifth Row -->
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior13.jpg" alt="Image 13" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior13.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior14.jpg" alt="Image 14" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior14.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior15.jpg" alt="Image 15" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior15.jpg')">
-            </div>
-    
-            <!-- Sixth Row -->
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior16.jpg" alt="Image 16" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior16.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior17.jpg" alt="Image 17" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior17.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior18.jpg" alt="Image 18" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior18.jpg')">
-            </div>
-    
-            <!-- Seventh Row -->
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior19.jpg" alt="Image 19" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior19.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior20.jpg" alt="Image 20" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior20.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior21.jpg" alt="Image 21" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior21.jpg')">
-            </div>
-    
-            <!-- Eighth Row -->
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior22.jpg" alt="Image 22" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior22.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior23.jpg" alt="Image 23" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior23.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior24.jpg" alt="Image 24" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior24.jpg')">
-            </div>
-    
-            <!-- Ninth Row -->
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior25.jpg" alt="Image 25" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior25.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior26.jpg" alt="Image 26" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior26.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior27.jpg" alt="Image 27" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior27.jpg')">
-            </div>
-    
-            <!-- Tenth Row -->
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior28.jpg" alt="Image 28" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior28.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior29.jpg" alt="Image 29" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior29.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior30.jpg" alt="Image 30" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior30.jpg')">
-            </div>
-    
-            <!-- Eleventh Row -->
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior31.jpg" alt="Image 31" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior31.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior32.jpg" alt="Image 32" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior32.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior33.jpg" alt="Image 33" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior33.jpg')">
-            </div>
-    
-            <!-- Twelfth Row -->
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior34.jpg" alt="Image 34" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior34.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior35.jpg" alt="Image 35" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior35.jpg')">
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="./app/views/imageFolder/seniors/senior36.jpg" alt="Image 36" class="custom-img" ng-click="showImage('./app/views/imageFolder/seniors/senior36.jpg')">
+            <!-- Image Grid -->
+            <div class="col-6 col-md-4 img-container" ng-repeat="image in seniorimages">
+                <img ng-src="{{image}}" alt="Senior Image" class="custom-img" ng-click="showImage(image)">
             </div>
         </div>
     </div>
 </div>
-
 
 <!-- Modal for Image Preview -->
 <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
@@ -167,4 +58,4 @@
             </div>
         </div>
     </div>
-</div>
+   </div>

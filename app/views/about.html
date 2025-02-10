@@ -1,33 +1,122 @@
-<div style="margin-top: 10px;">
+<div class="about-section">
     <div style="text-align: center;">
-        <h3 class="andrea-text" style="font-weight: bold; font-size: 44px;">About Me</h3>
+        <h3 class="andrea-text about-title">About Me</h3>
+    </div>
+
+    <!-- Image and text side by side -->
+    <div class="about-content">
+        <!-- Image on the left -->
+        <div class="about-image">
+            <img src="./app/views/imageFolder/kayleeimage.jpg" alt="About Me">
+        </div>
+
+        <!-- Text on the right -->
+        <div class="about-text">
+            <h2 class="times-new-roman about-heading">Hi, I am</h2>
+            <h2 class="andrea-text about-heading">Kaylee</h2>
+            <p>
+                I discovered my passion for photography in 2017 and have been capturing life's special moments ever since. Over the years, I've had the privilege of photographing countless weddings, portraits, and headshots. What I love most about being a photographer is the creative freedom to explore new ideas and transform them into lasting memories for my clients. My goal is always to make people feel confident and at ease in front of the camera, ensuring a fun and relaxed experience.
+            </p>
+            <p>
+                I’m deeply committed to the little details, ensuring my clients not only look their best but also feel their best throughout the entire experience. My priority is to go above and beyond, providing the highest level of care and dedication to guarantee ultimate client satisfaction.
+            </p>
+            <p>
+                Outside of photography, I love going to the gym and spending time with my wonderful husband. You can also catch me indulging in a bowl of ice cream or trying out a new recipe.
+            </p>
+        </div>
+    </div>
+
+    <!-- Button -->
+    <div class="about-button">
+        <a href="/portfolio">
+            <button class="times-new-roman">Contact Me</button>
+        </a>
     </div>
 </div>
 
-<!-- Image and text side by side -->
-<div style="display: flex; align-items: center; margin-top: 20px; margin-bottom: 50px;">
-    <!-- Image on the left -->
-    <div style="flex: 2;">
-        <img src="./app/views/imageFolder/kayleeimage.jpg" alt="About Me" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px;">
-    </div>
-    
-    <!-- Text on the right -->
-     <!--Make this one line same fonts-->
-    <div style="flex: 2; font-size: 14px; color: #333;">
-        <h2 class="times-new-roman" style="font-weight: bold; font-size: 25px;">Hi, I am</h2><h2 class="andrea-text">Kaylee</h2>
-        <div class="times-new-roman">I discovered my passion for photography in 2017 and have been capturing life's special moments ever since. Over the years, I've had the privilege of photographing countless weddings, portraits, and headshots. What I love most about being a photographer is the creative freedom to explore new ideas and transform them into lasting memories for my clients. My goal is always to make people feel confident and at ease in front of the camera, ensuring a fun and relaxed experience.<br><br>
+<style>
+    /* Container Styling */
+    .about-section {
+        margin-top: 10px;
+        padding: 20px;
+    }
 
-            I’m deeply committed to the little details, ensuring my clients not only look their best but also feel their best throughout the entire experience. My priority is to go above and beyond, providing the highest level of care and dedication to guarantee ultimate client satisfaction.<br><br>
-            
-            Outside of photography, I love going to the gym and spending time with my wonderful husband. You can also catch me indulging in a bowl of ice cream or trying out a new recipe.</div>
-    </div>
-</div>
+    /* Title Styling */
+    .about-title {
+        font-weight: bold;
+        font-size: 44px;
+    }
 
-<!-- Button -->
-<div style="text-align: center; margin-bottom: 20px;">
-    <a href="/portfolio">
-        <button class="times-new-roman" style="background-color: #2D2D2D; color: white; border: none; padding: 15px 30px; font-size: 18px; cursor: pointer; text-align: center; width: 200px;">
-            Contact Me
-        </button>
-    </a>
-</div>
+    /* Image and Text Layout */
+    .about-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+    }
+
+    /* Image Styling */
+    .about-image {
+        flex: 1;
+        min-width: 250px;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    /* Text Styling */
+    .about-text {
+        flex: 2;
+        font-size: 16px;
+        color: #333;
+        max-width: 600px;
+    }
+
+    .about-heading {
+        display: inline;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    /* Button Styling */
+    .about-button {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .about-button button {
+        background-color: #2D2D2D;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        font-size: 18px;
+        cursor: pointer;
+        width: 200px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .about-content {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .about-text {
+            font-size: 14px;
+            max-width: 90%;
+        }
+
+        .about-heading {
+            font-size: 22px;
+        }
+    }
+</style>
