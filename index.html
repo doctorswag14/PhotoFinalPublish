@@ -145,6 +145,16 @@
         document.querySelector('#slideMenu .close-btn').addEventListener('click', function () {
             document.getElementById('slideMenu').classList.remove('open');
         });
+
+        // Close the menu when clicking outside
+        document.addEventListener('click', function (event) {
+            var slideMenu = document.getElementById('slideMenu');
+            var slideMenuToggle = document.getElementById('slideMenuToggle');
+            // Check if the click is outside the slide menu and the toggle button
+            if (!slideMenu.contains(event.target) && !slideMenuToggle.contains(event.target)) {
+                slideMenu.classList.remove('open');
+            }
+        });
     </script>
 </body>
 </html>
