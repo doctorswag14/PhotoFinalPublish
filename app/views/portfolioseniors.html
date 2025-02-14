@@ -2,9 +2,9 @@
     .custom-img {
         width: 100%; /* Responsive width */
         height: 250px; /* Adjusted for mobile */
-        object-fit: cover; /* Ensures uniform image display */
+        object-fit: contain; /* Ensures full image is displayed without cropping */
         background-color: white;
-        border-radius: 8px; /* Slight rounding for a polished look */
+        border-radius: 5px; /* Slight rounding for a polished look */
         transition: transform 0.3s ease-in-out;
     }
 
@@ -13,7 +13,8 @@
     }
 
     .img-container {
-        padding: 8px; /* More padding for better spacing */
+        padding: 5px; /* More padding for better spacing */
+        text-align: center; /* Ensures images are centered */
     }
 
     @media (max-width: 576px) {
@@ -36,7 +37,7 @@
     </div>
 
     <div class="container mt-4">
-        <div class="row">
+        <div class="row justify-content-center">
             <!-- Image Grid -->
             <div class="col-6 col-md-4 img-container" ng-repeat="image in seniorimages">
                 <img ng-src="{{image}}" alt="Senior Image" class="custom-img" ng-click="showImage(image)">
@@ -49,13 +50,9 @@
 <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <!-- <div class="modal-header">
-                <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div> -->
             <div class="modal-body text-center">
                 <img id="modalImage" src="" alt="Full Image" class="img-fluid">
             </div>
         </div>
     </div>
-   </div>
+</div>
