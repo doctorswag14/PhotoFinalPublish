@@ -1,70 +1,98 @@
+<style>
+    .featurette img {
+        width: 100%; /* Ensures responsiveness */
+        max-width: 500px; /* Keeps images from being too large */
+        height: auto; /* Maintains aspect ratio */
+        display: block;
+        margin: 0 auto; /* Centers image */
+        padding: 10px; /* Adds slight padding around images */
+    }
+
+    .featurette {
+        margin-bottom: 80px; /* Adds more spacing between sections */
+    }
+
+    .col-md-7 {
+        padding: 30px; /* More spacing for text */
+    }
+
+    @media (max-width: 768px) {
+        .featurette img {
+            max-width: 100%; /* Full width on smaller screens */
+        }
+
+        .col-md-7 {
+            padding: 20px; /* Adjust text padding */
+        }
+    }
+</style>
+
 <div>
-    <div>
-        <div style="text-align: center; margin-bottom: 40px;">
-            <h3 class="andrea-text" style="font-weight: bold; font-size: 34px; @media (max-width: 768px) { font-size: 28px; }">Pricing & Packages</h3>
+    <div style="text-align: center; margin-bottom: 40px;">
+        <h3 class="andrea-text" style="font-weight: bold; font-size: 34px;">Pricing & Packages</h3>
+    </div>
+</div>
+<div class="container marketing">
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading andrea-text">Blissful Beginnings</h2>
+            <div class="times-new-roman">
+                <p>4 Hours of Coverage</p>
+                <p>200-250 Digital Images</p>
+                <p>Engagement Session</p>
+                <p>Customized Timeline Assistance</p>
+                <p>Delivery 6-8 Weeks</p>
+                <p>$150 Deposit, remaining due one month before the wedding</p>
+                <div style="border-top: 0.5px solid black; padding-top: 10px;">$1700</div>
+            </div>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img src="./app/views/imageFolder/pricepackage1.png" class="img-fluid">
         </div>
     </div>
-    <div class="container marketing" style="margin-top: 40px;">
-        <div class="row featurette" style="margin-bottom: 60px;">
-            <div class="col-md-7 order-md-2" style="padding: 20px;">
-                <h2 class="featurette-heading andrea-text" style="margin-bottom: 20px; font-size: 24px; @media (max-width: 768px) { font-size: 18px; }">Blissful Beginnings</h2>
-                <div class="times-new-roman">
-                    <div style="margin-bottom: 10px;">4 Hours of Coverage</div>
-                    <div style="margin-bottom: 10px;">200-250 Digital Images</div>
-                    <div style="margin-bottom: 10px;">Engagement Session</div>
-                    <div style="margin-bottom: 10px;">Customized Timeline Assistance</div>
-                    <div style="margin-bottom: 10px;">Delivery 6-8 Weeks</div>
-                    <div style="margin-bottom: 20px;">$150 Deposit, with the remaining due one month before the wedding</div>
-                    <div style="border-top: 0.5px solid black; margin-top: 30px; padding-top: 10px;">$1700</div>
-                </div>
-            </div>
-            <div class="col-md-5 order-md-1">
-                <img src="./app/views/imageFolder/pricepackage1.png" height="100%" width="100%" style="padding-right: 50px; padding-bottom: 20px;">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading andrea-text">Radiant Reflections</h2>
+            <div class="times-new-roman">
+                <p>6 Hours of Coverage</p>
+                <p>350-400 Digital Images</p>
+                <p>Professional Editing</p>
+                <p>Engagement Session</p>
+                <p>Customized Timeline Assistance</p>
+                <p>Delivery 6-8 Weeks</p>
+                <p>$150 Deposit, remaining due one month before the wedding</p>
+                <div style="border-top: 0.5px solid black; padding-top: 10px;">$2000</div>
             </div>
         </div>
-        <div class="row featurette" style="margin-bottom: 60px;">
-            <div class="col-md-7" style="padding: 20px;">
-                <h2 class="featurette-heading andrea-text" style="margin-bottom: 20px; font-size: 24px; @media (max-width: 768px) { font-size: 18px; }">Radiant Reflections</h2>
-                <div class="times-new-roman">
-                    <div style="margin-bottom: 10px;">6 Hours of Coverage</div>
-                    <div style="margin-bottom: 10px;">350-400 Digital Images</div>
-                    <div style="margin-bottom: 10px;">Professional Editing</div>
-                    <div style="margin-bottom: 10px;">Engagement Session</div>
-                    <div style="margin-bottom: 10px;">Customized Timeline Assistance</div>
-                    <div style="margin-bottom: 10px;">Delivery 6-8 Weeks</div>
-                    <div style="margin-bottom: 20px;">$150 Deposit, with the remaining due one month before the wedding</div>
-                    <div style="border-top: 0.5px solid black; margin-top: 30px; padding-top: 10px;">$2000</div>
-                </div>
-            </div>
-            <div class="col-md-5">
-                <img src="./app/views/imageFolder/pricepackage2.png" height="100%" width="100%" style="padding-left: 50px; padding-bottom: 20px;">
+        <div class="col-md-5">
+            <img src="./app/views/imageFolder/pricepackage2.png" class="img-fluid">
+        </div>
+    </div>
+
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading andrea-text">Pure Elegance</h2>
+            <div class="times-new-roman">
+                <p>8 Hours of Coverage</p>
+                <p>450-500 Digital Images</p>
+                <p>Engagement Session</p>
+                <p>Professional Editing</p>
+                <p>Customized Timeline Assistance</p>
+                <p>Delivery 6-8 Weeks</p>
+                <p>$150 Deposit, remaining due one month before the wedding</p>
+                <div style="border-top: 0.5px solid black; padding-top: 10px;">$2700</div>
             </div>
         </div>
-        <div class="row featurette" style="margin-bottom: 60px;">
-            <div class="col-md-7 order-md-2" style="padding: 20px;">
-                <h2 class="featurette-heading andrea-text" style="margin-bottom: 20px; font-size: 24px; @media (max-width: 768px) { font-size: 18px; }">Pure Elegance</h2>
-                <div class="times-new-roman">
-                    <div style="margin-bottom: 10px;">8 Hours of Coverage</div>
-                    <div style="margin-bottom: 10px;">450-500 Digital Images</div>
-                    <div style="margin-bottom: 10px;">Engagement Session</div>
-                    <div style="margin-bottom: 10px;">Professional Editing</div>
-                    <div style="margin-bottom: 10px;">Customized Timeline Assistance</div>
-                    <div style="margin-bottom: 20px;">Delivery 6-8 Weeks</div>
-                    <div style="margin-bottom: 20px;">$150 Deposit, with the remaining due one month before the wedding</div>
-                    <div style="border-top: 0.5px solid black; margin-top: 30px; padding-top: 10px;">$2700</div>
-                </div>
-            </div>
-            <div class="col-md-5 order-md-1">
-                <img src="./app/views/imageFolder/pricepackage3.png" height="100%" width="100%" style="padding-right: 50px; padding-bottom: 20px;">
-            </div>
+        <div class="col-md-5 order-md-1">
+            <img src="./app/views/imageFolder/pricepackage3.png" class="img-fluid">
         </div>
-        <div class="times-new-roman" style="text-align: center; margin-bottom: 50px;">
-            <h3 style="font-size: 24px; @media (max-width: 768px) { font-size: 18px; }">A La Carte</h3>
-            <div style="font-size: 18px; @media (max-width: 768px) { font-size: 16px; }">$100 per hour of extra coverage</div>
-            <div style="font-size: 18px; @media (max-width: 768px) { font-size: 16px; }">Full:</div>
-            <div style="font-size: 18px; @media (max-width: 768px) { font-size: 16px; }">Engagement or Bridal Session $225</div>
-            <div style="font-size: 18px; @media (max-width: 768px) { font-size: 16px; }">Mini:</div>
-            <div style="font-size: 18px; @media (max-width: 768px) { font-size: 16px; }">Engagement or Bridal Session $125</div>
-        </div>
+    </div>
+
+    <div class="times-new-roman text-center">
+        <h3>A La Carte</h3>
+        <p>$100 per hour of extra coverage</p>
+        <p>Full Engagement or Bridal Session: $225</p>
+        <p>Mini Engagement or Bridal Session: $125</p>
     </div>
 </div>

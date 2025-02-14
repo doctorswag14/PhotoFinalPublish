@@ -180,6 +180,24 @@
                 slideMenu.classList.remove('open');
             }
         });
+
+            // Force reload by appending a random query string to CSS & JS files
+            function clearCache() {
+                const version = new Date().getTime(); // Unique timestamp to force reload
+
+                // Update stylesheets
+                document.querySelectorAll("link[rel='stylesheet']").forEach((link) => {
+                    link.href = link.href.split("?")[0] + "?v=" + version;
+                });
+
+                // Update scripts
+                document.querySelectorAll("script[src]").forEach((script) => {
+                    script.src = script.src.split("?")[0] + "?v=" + version;
+                });
+            }
+
+            // Call function on page load
+            window.onload = clearCache;
     </script>
 </body>
 </html>
