@@ -62,37 +62,40 @@
 
         // Add the run block to dynamically set the page title
         .run(['$rootScope', '$route', function ($rootScope, $route) {
-            $rootScope.$on('$routeChangeSuccess', function () {
-                if ($route.current && $route.current.templateUrl) {
-                    switch ($route.current.templateUrl) {
-                        case 'app/views/booknow.html':
-                            $rootScope.title = 'Book Now - Kaylee Jean Photography';
-                            break;
-                        case 'app/views/home.html':
-                            $rootScope.title = 'Home - Kaylee Jean Photography';
-                            break;
-                        case 'app/views/about.html':
-                            $rootScope.title = 'About - Kaylee Jean Photography';
-                            break;
-                        case 'app/views/blog.html':
-                            $rootScope.title = 'Blog - Kaylee Jean Photography';
-                            break;
-                        case 'app/views/mywork.html':
-                            $rootScope.title = 'My Work - Kaylee Jean Photography';
-                            break;
-                        case 'app/views/pricing.html':
-                            $rootScope.title = 'Pricing - Kaylee Jean Photography';
-                            break;
-                        case 'app/views/weddingpricingandpackage.html':
-                            $rootScope.title = 'Wedding Pricing and Packages - Kaylee Jean Photography';
-                            break;
-                        case 'app/views/sessionpricingandpackage.html':
-                            $rootScope.title = 'Session Pricing and Packages - Kaylee Jean Photography';
-                            break;
-                        default:
-                            $rootScope.title = 'Kaylee Jean Photography';
-                    }
-                }
-            });
-        }]);
+        $rootScope.$on('$routeChangeSuccess', function () {
+        if ($route.current && $route.current.templateUrl) {
+            switch ($route.current.templateUrl) {
+                case 'app/views/booknow.html':
+                    $rootScope.title = 'Book Now - Kaylee Jean Photography';
+                    break;
+                case 'app/views/home.html':
+                    $rootScope.title = 'Home - Kaylee Jean Photography';
+                    break;
+                case 'app/views/about.html':
+                    $rootScope.title = 'About - Kaylee Jean Photography';
+                    break;
+                case 'app/views/blog.html':
+                    $rootScope.title = 'Blog - Kaylee Jean Photography';
+                    break;
+                case 'app/views/mywork.html':
+                    $rootScope.title = 'My Work - Kaylee Jean Photography';
+                    break;
+                case 'app/views/pricing.html':
+                    $rootScope.title = 'Pricing - Kaylee Jean Photography';
+                    break;
+                case 'app/views/weddingpricingandpackage.html':
+                    $rootScope.title = 'Wedding Pricing and Packages - Kaylee Jean Photography';
+                    break;
+                case 'app/views/sessionpricingandpackage.html':
+                    $rootScope.title = 'Session Pricing and Packages - Kaylee Jean Photography';
+                    break;
+                default:
+                    $rootScope.title = 'Kaylee Jean Photography';
+            }
+
+            // ✅ Dynamically update the browser's <title> tag
+            document.title = $rootScope.title;
+        }
+        });
+}]);
 })();
